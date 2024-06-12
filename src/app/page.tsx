@@ -138,13 +138,15 @@ const HomePage = (props: Props) => {
       <div className='flex flex-row flex-1'>
         <div className='border-primary/5 border-2 max-w-xs flex flex-col gap-2 justify-between shadow-md rounded-md p-4'>
           {/* top secion  */}
-          <div className='flex flex-col gap-2'>
+          <div className='flex flex-col gap-2 mx-6'>
             <ModeToggle />
             <Button
               variant={'outline'} size={'icon'}
               onClick={() => {
                 setMirrored((prev) => !prev)
+
               }}
+              className='my-6'
             ><FlipHorizontal /></Button>
 
             <Separator className='my-2' />
@@ -312,7 +314,7 @@ const HomePage = (props: Props) => {
         </li>
         <Separator />
         <li>
-          <strong>Take Pictures 📸</strong>
+          <h1 className='text-xl text-purple-300 font-bold'>SnapShots Capturing Property 📸</h1>
           <p>Capture snapshots at any moment from the video feed.</p>
           <Button
             className='h-6 w-6 my-2'
@@ -334,7 +336,7 @@ const HomePage = (props: Props) => {
         </li>
         <Separator />
         <li>
-          <strong>Enable/Disable Auto Record 🚫</strong>
+          <h1 className='text-xl'>Enable/Disable Auto Record 🚫</h1>
           <p>
             Option to enable/disable automatic video recording whenever
             required.
